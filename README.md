@@ -20,7 +20,7 @@
     - Click the submit button to see what my Akan name would be
   
 ## Live link
-    Deployed project can be accessed here -  [Akan Names Generator](https://samwel-chege.github.io/akan-names/)
+    Deployed project can be accessed here -[Akan Names Generator](https://samwel-chege.github.io/akan-names/)
 ​
 ## Technologies used
     - HTML
