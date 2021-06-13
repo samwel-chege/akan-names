@@ -16,47 +16,47 @@ form.addEventListener("submit", function generate(event){
         alert("invalid month");
     }
     else if (Math.round(result) == 0 && gender === "male"){
-        document.getElementById("final").innerHTML = ("Your Akan Name is " + maleNames[0]);
+        document.getElementById("generate").innerHTML = ("Your Akan Name is " + maleNames[0]);
     }
     else if (Math.round(result) == 1 || Math.round(result) == -1 && gender === "male"){
-        document.getElementById("final").innerHTML = ("Your Akan Name is " + maleNames[1]);
+        document.getElementById("generate").innerHTML = ("Your Akan Name is " + maleNames[1]);
     }
     else if (Math.round(result) == 2 || Math.round(result) == -2 && gender === "male"){
-        document.getElementById("final").innerHTML = ("Your Akan Name is " + maleNames[2]);
+        document.getElementById("generate").innerHTML = ("Your Akan Name is " + maleNames[2]);
     }
     else if (Math.round(result) == 3 || Math.round(result) == -3 && gender === "male"){
-        document.getElementById("final").innerHTML = ("Your Akan Name is " + maleNames[3]);
+        document.getElementById("generate").innerHTML = ("Your Akan Name is " + maleNames[3]);
     }
     else if (Math.round(result) == 4 || Math.round(result) == -4 && gender === "male"){
-        document.getElementById("final").innerHTML = ("Your Akan Name is " + maleNames[4]);
+        document.getElementById("generate").innerHTML = ("Your Akan Name is " + maleNames[4]);
     }
     else if (Math.round(result) == 5 || Math.round(result) == -5 && gender === "male"){
-        document.getElementById("final").innerHTML = ("Your Akan Name is " + maleNames[5]);
+        document.getElementById("generate").innerHTML = ("Your Akan Name is " + maleNames[5]);
     }
     else if (Math.round(result) == 6 || Math.round(result) == -6 && gender === "male"){
-        document.getElementById("final").innerHTML = ("Your Akan Name is " + maleNames[6]);
+        document.getElementById("generate").innerHTML = ("Your Akan Name is " + maleNames[6]);
     }
 
     else if (Math.round(result) == 0 && gender === "female"){
-    document.getElementById("final").innerHTML = ("Your Akan Name is " + femaleNames[0]);
+    document.getElementById("generate").innerHTML = ("Your Akan Name is " + femaleNames[0]);
     }
     else if (Math.round(result) == 1 || Math.round(result) == -1 && gender === "female"){
-    document.getElementById("final").innerHTML = ("Your Akan Name is " + femaleNames[1]);
+    document.getElementById("generate").innerHTML = ("Your Akan Name is " + femaleNames[1]);
     }
     else if (Math.round(result) == 2 || Math.round(result) == -2 && gender === "female"){
-    document.getElementById("final").innerHTML = ("Your Akan Name is " + femaleNames[2]);
+    document.getElementById("generate").innerHTML = ("Your Akan Name is " + femaleNames[2]);
     }
     else if (Math.round(result) == 3 || Math.round(result) == -3 && gender === "female"){
-    document.getElementById("final").innerHTML = ("Your Akan Name is " + femaleNames[3]);
+    document.getElementById("generate").innerHTML = ("Your Akan Name is " + femaleNames[3]);
     }
     else if (Math.round(result) == 4 || Math.round(result) == -4 && gender === "female"){
-    document.getElementById("final").innerHTML = ("Your Akan Name is " + femaleNames[4]);
+    document.getElementById("generate").innerHTML = ("Your Akan Name is " + femaleNames[4]);
     }
     else if (Math.round(result) == 5 || Math.round(result) == -5 && gender === "female"){
-    document.getElementById("final").innerHTML = ("Your Akan Name is " + femaleNames[5]);
+    document.getElementById("generate").innerHTML = ("Your Akan Name is " + femaleNames[5]);
     }
     else if (Math.round(result) == 6 || Math.round(result) == -6 && gender === "female"){
-    document.getElementById("final").innerHTML = ("Your Akan Name is " + femaleNames[6]);
+    document.getElementById("generate").innerHTML = ("Your Akan Name is " + femaleNames[6]);
     }
     else{
         alert("Please fill out evey field");
