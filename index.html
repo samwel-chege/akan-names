@@ -64,28 +64,36 @@
                       </tr>
                     </tbody>
                   </table>
-                <form action="" method="GET" class="birthdate">
-                    <div class="birthdate">
-                        <label for="date">Day:</label>
-                        <input type="text" name="day" id="day" required>
+                  <div class="alert alert-success" role="alert">
+                    <p id="final"></p>
+                  </div>
+                  <form id="form">
+                    <div class="mb-3">
+                      <label for="century" class="form-label">Enter your century</label>
+                      <input type="number" class="form-control" id="century" aria-describedby="emailHelp">
                     </div>
-                    <div class="birthdate">
-                        <label for="month">Month:</label>
-                        <input type="text" name="month" id="month" required>
-                    </div>
-                    <div class="birthdate">
-                        <label for="year">Year:</label>
-                        <input type="number" name="year" id="year" required>
-                    </div>
-                </form>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-          </form>
-           <form>
-             <input type="submit" onclick="generate()" value="Generate">
-            </form>
+                    <div class="mb-3">
+                        <label for="year" class="form-label">Enter the year</label>
+                        <input type="number" class="form-control" id="year" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="month" class="form-label">Enter the month</label>
+                        <input type="number" class="form-control" id="month" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="day" class="form-label">Date of the month</label>
+                        <input type="number" class="form-control" id="day" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="gender" class="form-label">select gender</label>
+                        <select class="form-control" id="gender">
+                          <option></option>
+                          <option>female</option>
+                          <option>male</option>
+                        </select>
+                      </div>
+                    <button  class="btn btn-primary " type="submit">Submit</button>
+                  </form>
         </div>
     </div>
     <script src="static/JS/main.js"></script>
