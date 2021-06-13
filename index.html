@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +8,86 @@
     <link rel="stylesheet" href="static/CSS/main.css">
     
     <title>Document</title>
-</head>
-
-<style>
-    #bg{
-        background-image: url(static/Images/IMG-4073.jpg);
-    }
-</style>
-<body>
+ </head>
+ <body>
     <div class="container">
         <div class="jumbotron" id="bg">
-            <h1><strong><em>Akan Name Generator</em></strong></h1>
-        </div>
-        <div class="jumbotron">
+            <h1><strong><em>Akan Name Generator</em></strong></h1><hr>
             <p>As part of the African culture, different communities have their own
                 way of generating names.In Ghana children are frequently given their
                 first name as a 'day name' which corresponds to the day in the week
                 they were born.</p>
-                <p>Fill the form below to know your Akan name;</p>
+                <p>Here is a table showing the respective male and female Akan names.To know your Akan name fill in the form down below with your birhdate and your gender then click generate.</p>
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Day</th>
+                        <th>Male</th>
+                        <th>Female</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Sunday</td>
+                        <td>Kwasi</td>
+                        <td>Akosua</td>
+                      </tr>
+                      <tr>
+                        <td>Monday</td>
+                        <td>Kwadwo</td>
+                        <td>Adwoa</td>
+                      </tr>
+                      <tr>
+                        <td>Tuesday</td>
+                        <td>Kwabena</td>
+                        <td>Abenaa</td>
+                      </tr>
+                      <tr>
+                        <td>Wednesday</td>
+                        <td>Kwaku</td>
+                        <td>Akua</td>
+                      </tr>
+                      <tr>
+                        <td>Thursday</td>
+                        <td>Yaw</td>
+                        <td>Yaa</td>
+                      </tr>
+                      <tr>
+                        <td>Friday</td>
+                        <td>Kofi</td>
+                        <td>Afua</td>
+                      </tr>
+                      <tr>
+                        <td>Saturday</td>
+                        <td>Kwame</td>
+                        <td>Ama</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                <form action="" method="GET" class="birthdate">
+                    <div class="birthdate">
+                        <label for="date">Day:</label>
+                        <input type="text" name="day" id="day" required>
+                    </div>
+                    <div class="birthdate">
+                        <label for="month">Month:</label>
+                        <input type="text" name="month" id="month" required>
+                    </div>
+                    <div class="birthdate">
+                        <label for="year">Year:</label>
+                        <input type="number" name="year" id="year" required>
+                    </div>
+                </form>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label>
           </form>
-          <form>
-              <div class="nativeDatePicker">
-                  <label for="bday">Enter your birthday:</label>
-                  <input type="date" id="bday" name="bday">
-                  <span class="validity"></span><br>
-                  <input type="submit" value="submit">
-              </div>
-          </form>
+           <form>
+             <input type="submit" onclick="getDayAndName()" value="Generate">
+            </form>
         </div>
     </div>
     
-</body>
+ </body>
 </html>
