@@ -19,8 +19,8 @@
     - Choose what gender I am.
     - Click the submit button to see what my Akan name would be
   
-## Live link
-    Deployed project can be accessed here -[Akan Names Generator](https://samwel-chege.github.io/akan-names/)
+### Live link
+ View [live] (https://samwel-chege.github.io/akan-names/)
 ​
 ## Technologies used
     - HTML
